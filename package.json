@@ -62,9 +62,29 @@
                 "type": "text",
                 "default": "1234 Main St, Anytown, USA"
             },
-            "store_address_link": {
+            "google_maps_link": {
                 "type": "text",
                 "default": "https://www.google.com/maps?q=1234+Main+St,+Anytown,+USA"
+            },
+            "facebook_link": {
+                "type": "text",
+                "default": ""
+            },
+            "twitter_link": {
+                "type": "text",
+                "default": ""
+            },
+            "instagram_link": {
+                "type": "text",
+                "default": ""
+            },
+            "youtube_link": {
+                "type": "text",
+                "default": ""
+            },
+            "tiktok_link": {
+                "type": "text",
+                "default": ""
             },
             "show_author": {
                 "type": "boolean",
