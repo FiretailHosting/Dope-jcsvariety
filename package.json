@@ -1,16 +1,16 @@
 {
-    "name": "dope",
-    "description": "A Ghost theme",
-    "version": "1.0.0",
+    "name": "cjsvariety",
+    "description": "A Ghost theme for the CJS Variety Store.",
+    "version": "1.0.1",
     "private": true,
     "engines": {
         "ghost": ">=5.0.0"
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Ovi Quintanal",
+        "email": "quintanalo@firetailhosting.com",
+        "url": "https://www.firetailhosting.com"
     },
     "keywords": [
         "ghost",
@@ -57,6 +57,14 @@
                     "Elegant serif"
                 ],
                 "default": "Modern sans-serif"
+            },
+            "store_address_text": {
+                "type": "text",
+                "default": "1234 Main St, Anytown, USA"
+            },
+            "store_address_link": {
+                "type": "text",
+                "default": "https://www.google.com/maps?q=1234+Main+St,+Anytown,+USA"
             },
             "show_author": {
                 "type": "boolean",
