@@ -3,15 +3,7 @@
 
 <div class="content-area">
 <main class="site-main">
-    <div class="social-badge">
-        {{#if facebook_link}}<a href="{{facebook_link}}" target="_blank"><i class="fab fa-facebook-f"></i></a>{{/if}}
-        {{#if instagram_link}}<a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>{{/if}}
-        {{#if google_maps_link}}<a href="https://google.com" target="_blank"><i class="fab fa-google"></i></a>{{/if}}
-        {{#if tiktok_link}}<a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>{{/if}}
-        {{#if youtube_link}}<a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>{{/if}}
-        {{#if twitter_link}}<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>{{/if}}
-
-    </div>
+    {{> "socials" extra_class="index"}}
 
     {{#get "tags" limit="all"}}
     <div class="tag-feed owl" data-count="{{pagination.total}}">
