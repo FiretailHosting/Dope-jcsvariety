@@ -28,6 +28,11 @@
     backdrop-filter: blur(6px);
   }
 
+  .canvas-opened .index.social-badge {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
   .index.social-badge a {
     color: #ffffff;
   }
