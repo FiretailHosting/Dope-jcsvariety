@@ -1,7 +1,7 @@
 {
     "name": "cjsvariety",
     "description": "A Ghost theme for the CJS Variety Store.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "private": true,
     "engines": {
         "ghost": ">=5.0.0"
