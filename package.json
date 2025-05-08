@@ -58,6 +58,22 @@
                 ],
                 "default": "Modern sans-serif"
             },
+            "cta_headline": {
+                "type": "text",
+                "default": "Welcome to CJS Variety Store"
+            },
+            "cta_subheadline": {
+                "type": "text",
+                "default": "Your one-stop shop for all your needs!"
+            },
+            "cta_button_text": {
+                "type": "text",
+                "default": "Shop Now"
+            },
+            "cta_button_link": {
+                "type": "text",
+                "default": "/shop"
+            },
             "store_address_text": {
                 "type": "text",
                 "default": "1234 Main St, Anytown, USA"

@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400);
+
+.cta-section {
+    position: relative;
+    height: 100vh; /* or use 500px, etc. */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+  }
+  
+  /* Image background via <img> */
+  .cta-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  /* Dark overlay */
+  .cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  /* Text content above all */
+  .cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+  }
+  
+  .headline {
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    margin: 20px 0 40px;
+    color: #9ad9ff;
+    font-size: 22.5px;
+    font-weight: 400;
+  }
+  
+  .cta {
+    padding: 13px 24px;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cta:hover {
+    background-color: #9bd57b;
+  }
+
+  .landing-content {
+	padding: 40px 30px;
+}
+
+.landing-content-inner {
+	padding: 0 40px;
+}
+
+.landing-faq {
+	margin-bottom: 40px;
+}
+
+.text-centered {
+	text-align: center;
+}
+  
