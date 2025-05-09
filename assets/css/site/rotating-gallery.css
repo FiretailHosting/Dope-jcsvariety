@@ -1,20 +1,37 @@
 .gallery-section {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+  border-bottom: 4px solid #000000;
+}
+
+.gallery-block {
+      background: linear-gradient(to right, 
+    rgba(0, 0, 0, 0) 0%, 
+        rgba(255, 255, 255, 1) 25%, 
+    rgba(255, 255, 255, 1) 50%, 
+        rgba(255, 255, 255, 1) 75%, 
+    rgba(0, 0, 0, 0) 100%);
+    padding: 100px;
+}
+
+/* on mobile make it 200 vh */
+@media (max-width: 800px) {
+  .gallery-section {
+    height: 125vh !important; 
+  }
+
 }
 
 .gallery {
   position: relative;
   width: 760px;
   height: 305px;
-  margin-top: 50px;
-  margin-bottom: 100px;
   &:hover :not(div[data-pos='0'],img) { cursor: pointer; }
 
   & .item {
@@ -22,6 +39,7 @@
     width: 175px;
     height: 150px;
     overflow: hidden;
+    border-radius: 10px;
     transition: transform 0.9s, width 0.9s, height 0.9s;
 
     & img {
@@ -139,4 +157,61 @@ h1 span {
   line-height: 30px;
   text-align: left;
   color: gray;
+}
+
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+.gallery-section {
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  /* IE 10+ */
 }

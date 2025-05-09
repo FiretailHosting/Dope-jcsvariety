@@ -1,5 +1,5 @@
 {{!< default}} <div class="content-area">
-    <main class="site-main">
+    <main class="site-main ">
         {{> "socials" extra_class="index"}}
         <section class="cta-section">
             <img src="{{@site.cover_image}}" alt="Background" class="cta-bg-img">
@@ -17,51 +17,28 @@
                 </div>
             </div>
         </section>
-        <script>
-            document.querySelector('.scroll-button').addEventListener('click', function () {
-                window.scrollTo({
-                    top: window.innerHeight,  // always scroll to 100vh from top
-                    left: 0,
-                    behavior: 'smooth'
-                });
-            });
-        </script>
+
         <section class="gallery-section">
             <div class="gallery-block">
-                <h1 style="color: {{@site.accent_color}};" class="fancy block__title">Men’s, Women’s & Kids’ Fashion — All in One
+                <h1 style="color: {{@site.accent_color}};" class="fancy block__title">Men’s, Women’s & Kids’ Fashion —
+                    All in One
                     Place</h1>
                 <span class="block__subtitle">Discover a wide selection of clothing for men, women, and children.
-Our inventory is always changing, so there’s something new every time you visit.</span>
+                    Our inventory is always changing, so there’s something new every time you visit.</span>
             </div>
             <div class='gallery'>
-                <div class='item' data-pos='0'><img
-                        src='{{@custom.gallery_image_1}}'>
+                <div class='item' data-pos='0'><img src='{{@custom.gallery_image_1}}'>
                 </div>
-                <div class='item' data-pos='1'><img
-                        src='{{@custom.gallery_image_2}}'>
+                <div class='item' data-pos='1'><img src='{{@custom.gallery_image_2}}'>
                 </div>
-                <div class='item' data-pos='2'><img
-                        src='{{@custom.gallery_image_3}}'>
+                <div class='item' data-pos='2'><img src='{{@custom.gallery_image_3}}'>
                 </div>
-                <div class='item' data-pos='3'><img
-                        src='{{@custom.gallery_image_4}}'>
+                <div class='item' data-pos='3'><img src='{{@custom.gallery_image_4}}'>
                 </div>
-                <div class='item' data-pos='4'><img
-                        src='{{@custom.gallery_image_5}}'>
+                <div class='item' data-pos='4'><img src='{{@custom.gallery_image_5}}'>
                 </div>
             </div>
         </section>
-        <script>
-
-            function init(e) {
-                if (!e.target.closest('.item')) return;
-                let hero = document.querySelector('div[data-pos="0"]');
-                let target = e.target.parentElement;
-                [target.dataset.pos, hero.dataset.pos] = [hero.dataset.pos, target.dataset.pos];
-            }
-
-            window.addEventListener('click', init, false);
-        </script>
 
         {{#get "tags" limit="all"}}
         <div class="tag-feed owl" data-count="{{pagination.total}}">
@@ -88,3 +65,20 @@ Our inventory is always changing, so there’s something new every time you visi
         {{/get}}
     </main>
     </div>
+    <script>
+        function init(e) {
+            if (!e.target.closest('.item')) return;
+            let hero = document.querySelector('div[data-pos="0"]');
+            let target = e.target.parentElement;
+            [target.dataset.pos, hero.dataset.pos] = [hero.dataset.pos, target.dataset.pos];
+        }
+
+        window.addEventListener('click', init, false);
+        document.querySelector('.scroll-button').addEventListener('click', function () {
+            window.scrollTo({
+                top: window.innerHeight * 2,  // always scroll to 100vh from top
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>

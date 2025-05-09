@@ -20,3 +20,21 @@
 @import "site/socials.css";
 @import "site/cta.css";
 @import "site/rotating-gallery.css";
+@import "site/scroll-container.css";
+
+
+/* Chrome, Safari, and Opera */
+*::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none !important;         /* hide scrollbar track & thumb */
+  -ms-overflow-style: none !important;      /* IE and Edge */
+}
+/* Just to be safe, overwrite on html/body */
+html, body {
+  overflow: auto;
+}
