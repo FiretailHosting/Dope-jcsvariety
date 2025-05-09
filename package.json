@@ -74,6 +74,26 @@
                 "type": "text",
                 "default": "/shop"
             },
+            "gallery_image_1": {
+                "type": "image",
+                "default": ""
+            },
+            "gallery_image_2": {
+                "type": "image",
+                "default": ""
+            },
+            "gallery_image_3": {
+                "type": "image",
+                "default": ""
+            },
+            "gallery_image_4": {
+                "type": "image",
+                "default": ""
+            },
+            "gallery_image_5": {
+                "type": "image",
+                "default": ""
+            },
             "store_address_text": {
                 "type": "text",
                 "default": "1234 Main St, Anytown, USA"
