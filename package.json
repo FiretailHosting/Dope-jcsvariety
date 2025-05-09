@@ -1,0 +1,139 @@
+{
+    "name": "cjsvariety",
+    "description": "A Ghost theme for the CJS Variety Store.",
+    "version": "1.0.3",
+    "private": true,
+    "engines": {
+        "ghost": ">=5.0.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Ovi Quintanal",
+        "email": "quintanalo@firetailhosting.com",
+        "url": "https://www.firetailhosting.com"
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "docs": "https://dope.ghost.io/about/",
+    "config": {
+        "posts_per_page": 5,
+        "image_sizes": {
+            "xs": {
+                "width": 150
+            },
+            "s": {
+                "width": 300
+            },
+            "m": {
+                "width": 750
+            },
+            "l": {
+                "width": 960
+            },
+            "xl": {
+                "width": 1140
+            },
+            "xxl": {
+                "width": 1920
+            }
+        },
+        "card_assets": true,
+        "custom": {
+            "title_font": {
+                "type": "select",
+                "options": [
+                    "Modern sans-serif",
+                    "Elegant serif"
+                ],
+                "default": "Modern sans-serif"
+            },
+            "body_font": {
+                "type": "select",
+                "options": [
+                    "Modern sans-serif",
+                    "Elegant serif"
+                ],
+                "default": "Modern sans-serif"
+            },
+            "cta_headline": {
+                "type": "text",
+                "default": "Welcome to CJS Variety Store"
+            },
+            "cta_subheadline": {
+                "type": "text",
+                "default": "Your one-stop shop for all your needs!"
+            },
+            "cta_button_text": {
+                "type": "text",
+                "default": "Shop Now"
+            },
+            "cta_button_link": {
+                "type": "text",
+                "default": "/shop"
+            },
+            "store_address_text": {
+                "type": "text",
+                "default": "1234 Main St, Anytown, USA"
+            },
+            "google_maps_link": {
+                "type": "text",
+                "default": "https://www.google.com/maps?q=1234+Main+St,+Anytown,+USA"
+            },
+            "facebook_link": {
+                "type": "text",
+                "default": ""
+            },
+            "twitter_link": {
+                "type": "text",
+                "default": ""
+            },
+            "instagram_link": {
+                "type": "text",
+                "default": ""
+            },
+            "youtube_link": {
+                "type": "text",
+                "default": ""
+            },
+            "tiktok_link": {
+                "type": "text",
+                "default": ""
+            },
+            "show_author": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
+            "show_related_posts": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            }
+        }
+    },
+    "scripts": {
+        "dev": "gulp",
+        "test": "gscan .",
+        "zip": "gulp zip"
+    },
+    "devDependencies": {
+        "@tryghost/shared-theme-assets": "2.5.0",
+        "autoprefixer": "10.4.21",
+        "beeper": "2.1.0",
+        "cssnano": "7.0.7",
+        "gscan": "4.48.0",
+        "gulp": "5.0.0",
+        "gulp-concat": "2.6.1",
+        "gulp-livereload": "4.0.2",
+        "gulp-postcss": "10.0.0",
+        "gulp-uglify": "3.0.2",
+        "gulp-zip": "5.1.0",
+        "ordered-read-streams": "2.0.0",
+        "postcss": "8.5.3",
+        "postcss-easy-import": "4.0.0",
+        "pump": "3.0.2"
+    }
+}
